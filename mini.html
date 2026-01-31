@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation – Topic Wise + Mini Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-heading {
+            text-align: center;
+            margin: 20px 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+
+        #main-box {
+            width: 100vw;
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 300px);
+            justify-content: center;
+            gap: 30px;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: #4CAF50;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+            color: white;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #ffffff;
+            color: #4CAF50;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        input {
+            padding: 8px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="main-heading">DOM Manipulation – Topic Wise + Mini Projects</h1>
+    <main id="main-box">
+
+        <div class="box">
+            <p>Mini Project</p>
+            <p>Text Highlighter</p>
+            <p>Background Color Changer</p>
+            <button class="btn" id="bg-change-btn">Change Background Color</button>
+        </div>
+
+        <!-- 🛠 Mini Project 2: Live Text Changer -->
+        <div class="box">
+            <p id="live-text">Live Text Changer</p>
+            <input type="text" id="text-input" placeholder="Type something..." />
+            <button class="btn" id="text-change-btn">Update Text</button>
+        </div>
+
+
+        <!-- 🛠 Mini Project 3: Color Switcher -->
+        <!-- 3টা button (Red, Green, Blue) -->
+
+        <!-- Click করলে text এর color change হবে -->
+        <div class="box">
+            <p id="color-text">Color Switcher</p>
+            <button class="btn" id="red-btn">Red</button>
+            <button class="btn" id="green-btn">Green</button>
+            <button class="btn" id="blue-btn">Blue</button>
+        </div>
+
+        <!-- 🛠 Mini Project 4: Image Switcher  -->
+        <!-- Button click করলে image change হবে -->
+        <div class="box">
+            <p id="image-text">Image Switcher</p>
+            <img id="image-switcher" src="a.jpg" alt="Placeholder Image" width="150" height="150" />
+            <button class="btn" id="image-change-btn">Change Image</button>
+        </div>
+
+        <!-- 🛠 Mini Project 5: Click Counter -->
+        <div class="box">
+            <p id="click-count">Click Counter</p>
+            <p id="counter">0</p>
+            <button class="btn" id="counter-btn">Click Me!</button>
+        </div>
+
+        <!-- 🛠 Mini Project 6: Simple Login Alert -->
+        <div class="box">
+            <p id="login-text">Simple Login Alert</p>
+            <input type="text" id="username-input" placeholder="Username" />
+            <input type="password" id="password-input" placeholder="Password" />
+            <button class="btn" id="login-btn">Login</button>
+        </div>
+
+        <!-- 🛠 Mini Project 7: Dynamic List -->
+        <div class="box">
+            <p id="dynamic-list-text">Dynamic List</p>
+            <input type="text" id="list-item-input" placeholder="Add item..." />
+            <button class="btn" id="add-item-btn">Add Item</button>
+            <ul id="item-list" style="list-style-type: none; padding: 0; margin-top: 10px;"></ul>
+        </div>
+    </main>
+
+
+    <script src="mini.js"></script>
+</body>
+
+</html>
